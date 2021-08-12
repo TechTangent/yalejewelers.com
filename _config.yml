@@ -50,5 +50,12 @@ defaults:
       carousel: ""
       carouselSpeed: 5000
 
-exclude: ["Gemfile", "Gemfile.lock", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-
+exclude:
+  [
+    "Gemfile",
+    "Gemfile.lock",
+    "vendor/bundle/",
+    "vendor/cache/",
+    "vendor/gems/",
+    "vendor/ruby/",
+  ]
