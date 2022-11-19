@@ -11,7 +11,7 @@ slideCount: 3
   'img/services/carousel'" %} {% for item in pics %}
   <div>
     <a href="{{ item.path }}" data-lightbox="jewelry"
-      ><img src="{{ item.path }}" class="ml-auto mr-auto img-fluid"
+      ><img src="{{ item.path }}" class="ms-auto me-auto img-fluid"
     /></a>
   </div>
   {% endfor %}
@@ -104,7 +104,7 @@ slideCount: 3
   window.onload=function name() {
       var quotes = [
           {% for q in site.data.quotes %}
-          "<p>&ldquo;{{q.quote}}&rdquo;</p><div class='text-right'>-{{q.name}}, {{q.city}}</div>",
+          "<p>&ldquo;{{q.quote}}&rdquo;</p><div class='text-end'>-{{q.name}}, {{q.city}}</div>",
           {% endfor %}
       ];
 
