@@ -6,6 +6,9 @@
 />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
+{% if jekyll.environment == 'production' %} {% include analytics.html %} {%
+  endif %}
+
 {% seo %}
 
 <!-- Bootstrap CSS -->

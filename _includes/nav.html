@@ -13,33 +13,22 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="yale-navbar">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav me-auto">
         {% assign nav_items = site.pages | where_exp:"item", "item.order > 0" |
         sort: 'order' %} {% for item in nav_items %}
-        <li
-          class="
-            nav-item
-            text-center{%
-            if
-            page.title
-            ==
-            item.title
-            %}
-            active{%
-            endif
-            %}
-          "
-        >
-          <a class="nav-link" href="{{ item.permalink }}"
+        <li class="nav-item text-center">
+          <a
+            class="nav-link{% if page.title == item.title %} active{% endif %}"
+            href="{{ item.permalink }}"
             >{{ item.title }} {% if page.title == item.title %}<span
-              class="sr-only"
+              class="visually-hidden"
               >(current)</span
             >{% endif %}</a
           >
         </li>
         {% endfor %}
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <form class="d-flex my-2 my-lg-0">
         {% include social.html classes = "mx-auto" %}
       </form>
     </div>
