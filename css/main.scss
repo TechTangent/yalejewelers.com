@@ -133,3 +133,11 @@ body {
     transform: skew(5deg) rotate(5deg);
   }
 }
+
+.banner-gradient {
+  font-weight: bold;
+  background: linear-gradient(#5cb7f1,#cac7a6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
