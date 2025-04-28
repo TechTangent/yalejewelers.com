@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/TechTangent/yalejewelers.com#readme",
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.5",
     "slick-carousel": "^1.8.1"
   }
 }
