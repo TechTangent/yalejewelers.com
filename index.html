@@ -64,6 +64,8 @@ slideCount: 4
         "<p>&ldquo;{{q.quote}}&rdquo;</p><div class='text-right'>-{{q.name}}, {{q.city}}</div>",
       {% endfor %}
     ];
+    
+    document.querySelector('[data-bs-target="#bannerModel"]').click();
 
     var i = Math.floor(Math.random() * quotes.length);
     document.getElementById("quote").innerHTML = quotes[i];
