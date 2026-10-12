@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include header.html %}
-  </head>
-  <body>
-    {% include nav.html %}
 
-    <!-- Use this to turn on and off the banner  -->
-    {% include banner.html %}
+<head>
+  {% include header.html %}
+</head>
 
-    {{ content }}
+<body>
+  {% include nav.html %}
 
-    {% include footer.html %}
+  <!-- Use this to turn on and off the banner  -->
+  {% include banner_alert.html %}
+  <!-- {% include banner_modal.html %} -->
 
-    {% if page.carousel != "" %}
-      {% include carousel.html elem_id = page.carousel speed = page.carouselSpeed slideCount = page.slideCount %}
-    {% endif %}
-  </body>
+  {{ content }}
+
+  {% include footer.html %}
+
+  {% if page.carousel != "" %}
+  {% include carousel.html elem_id = page.carousel speed = page.carouselSpeed slideCount = page.slideCount %}
+  {% endif %}
+</body>
+
 </html>
